@@ -1,1 +1,1 @@
-![geomux banner](images/geomux_banner.jpeg)
+![geomux banner](images/geomux_banner.jpg)
