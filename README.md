@@ -3,6 +3,7 @@
 **GIS, AWS, FME, CAD, Python, Linux, ETL pipelines.**
 
 AWS Certified Solutions Architect - Associate (SAA-C03)
+
 AWS Certified Cloud Pracitioner (CLF-C02)
 
 **Packages live on [PyPI](https://pypi.org/)** 
