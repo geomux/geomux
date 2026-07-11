@@ -1,6 +1,7 @@
 ![geomux banner](images/geomux_banner.jpg)
 
 ### *Geospatial Data Engineer*
+<sub>*...building and deploying AI-integrated systems on AWS*</sub>
 
 **GIS, AWS, FME, CAD, Python, Linux, ETL pipelines, MCP, LLM agentic workflows.**
 
