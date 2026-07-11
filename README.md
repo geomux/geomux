@@ -2,7 +2,7 @@
 
 ### *Geospatial Data Engineer*
 
-**GIS, AWS, FME, CAD, Python, Linux, ETL pipelines, LLM agentic workflows.**
+**GIS, AWS, FME, CAD, Python, Linux, ETL pipelines, MCP, LLM agentic workflows.**
 
 
 **Packages live on [PyPI](https://pypi.org/)** 
