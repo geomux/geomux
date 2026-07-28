@@ -16,6 +16,6 @@
 **Stacks accessible on [GitHub](https://github.com/)** 
 <sub>*...designed for IaC deployment via `terraform`*</sub>
 
-[`mcp-sandbox-configuration`](https://github.com/geomux/mcp-sandbox-configuration)
-[`mcp-host-setup`](https://github.com/geomux/mcp-host-setup)
+[`mcp-sandbox-setup`](https://github.com/geomux/mcp-sandbox-setup)
+[`mcp-host-configuration`](https://github.com/geomux/mcp-host-configuration)
 
