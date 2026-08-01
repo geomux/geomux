@@ -21,10 +21,10 @@ flowchart LR
         M(["<b>ollama<b><br/>local model"]):::model <-->|provider = local| C
     end
 
-    API(["<b>Anthropic API"<b><br/>frontier model]):::cloud
+    API(["<b>Cloud API"<b><br/>frontier model]):::cloud
     C <-->|HTTPS| N
     C <-.->|provider = api| API
-    IAC[["<b>IaC<b><br/>docker · ansible · terraform"]]:::iac -.->|provisions| RHOST
+    IAC[["<b>IaC<b><br/>docker · ansible · terraform"]]:::iac -.->|provisions/configures| RHOST
 
     classDef me fill:none,stroke:#4A4F4A,stroke-width:2px,color:#4A4F4A
     classDef pkg fill:#FFFDE7,stroke:#5A6B7A,stroke-width:2px,color:#424242
