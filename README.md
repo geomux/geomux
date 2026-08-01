@@ -10,17 +10,21 @@
 
 ```mermaid
 flowchart LR
-    U([you]):::me --> C["mcp-client-console"]:::pkg
-    C -->|HTTPS| N["nginx"]:::infra
-    N --> S["mcp-server-remote"]:::pkg
-    S --> T["tools<br/>shell · files"]:::edge
-    D["docker · ansible · terraform"]:::iac -.->|provisions| N
+    subgraph HOST["remote host"]
+        direction LR
+        N["nginx"]:::plumb --> S["mcp-server-remote"]:::pkg --> T["tools<br/>shell · files"]:::tools
+    end
 
-    classDef me fill:none,stroke:#4DA3FF,stroke-width:2px,color:#4DA3FF
-    classDef pkg fill:#0B3D91,stroke:#4DA3FF,stroke-width:2px,color:#FFFFFF
-    classDef infra fill:#16233D,stroke:#4DA3FF,stroke-width:1px,color:#CFE3FF
-    classDef edge fill:#A8321B,stroke:#FC3D21,stroke-width:2px,color:#FFFFFF
-    classDef iac fill:none,stroke:#5A7BA6,stroke-width:1px,color:#8FB3D9
+    U([you]):::me --> C["mcp-client-console"]:::pkg
+    C -->|HTTPS| N
+    IAC["docker · ansible · terraform"]:::iac -.->|provisions| HOST
+
+    classDef me fill:none,stroke:#4A4F4A,stroke-width:2px,color:#4A4F4A
+    classDef pkg fill:#33414F,stroke:#5A6B7A,stroke-width:2px,color:#E8EAE6
+    classDef plumb fill:#24272A,stroke:#4A4F4A,stroke-width:2px,color:#D6D8D2
+    classDef tools fill:#6E5F49,stroke:#8A7A60,stroke-width:2px,color:#F2EEE6
+    classDef iac fill:#2E4034,stroke:#476B50,stroke-width:2px,color:#E2EAE0
+    style HOST fill:#1C241E,stroke:#2E4034,stroke-width:2px,color:#C9CFC4
 ```
 
 
