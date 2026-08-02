@@ -5,12 +5,13 @@
 
 ### **<sub>AWS • MCP • LLM agentic workflows • Python • Linux</sub>**
 <sub>*Deploying with - Terraform • Ansible • Docker*</sub>
-<sub>*Geospatial foundation - GIS • FME • CAD • spatial ETL pipelines*</sub>
+
+<sub>*GIS foundation - Python geoprocessing • ETL pipelines • system automation*</sub>
 
 > [!NOTE]
 > Currently building MCP server/client systems and IaC stacks to deploy them.
 
-**The agentic AI tooling cloud deployed system**
+**Agentic AI tooling, cloud-deployed**
 <sub>*...a local CLI client, a remote MCP server, and the IaC that deploys it*</sub>
 
 ```mermaid
@@ -60,7 +61,7 @@ flowchart TB
 
 
 **Stacks accessible on [GitHub](https://github.com/geomux)** 
-<sub>*...designed for IaC deployment via `terraform` `ansible` `docker`*</sub>
+<sub>*...designed for IaC deployment via `terraform`•`ansible`•`docker`*</sub>
 
 [`mcp-sandbox-setup`](https://github.com/geomux/mcp-sandbox-setup)
 [`mcp-host-configure`](https://github.com/geomux/mcp-host-configure)
