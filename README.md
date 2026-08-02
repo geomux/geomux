@@ -1,30 +1,17 @@
 ![geomux banner](images/geomux_banner.jpg)
 
-### *Geospatial Data Engineer*
+## *Geospatial Data Engineer*
 <sub>*Building and deploying AI-integrated systems on AWS*</sub>
 
-**GIS, AWS, FME, CAD, Python, Linux, ETL pipelines, MCP, LLM agentic workflows.**
+### **<sub>AWS • MCP • LLM agentic workflows • Python • Linux</sub>**
+<sub>*Deploying with - Terraform • Ansible • Docker*</sub>
+<sub>*Geospatial foundation - GIS • FME • CAD • spatial ETL pipelines*</sub>
 
+> [!NOTE]
+> Currently building MCP server/client systems and IaC stacks to deploy them.
 
-
-**Packages live on [PyPI](https://pypi.org/)** 
-<sub>*...install with `pipx` and launch as apps straight from CLI!*</sub>
-
-[`mcp-server-remote`](https://pypi.org/project/mcp-server-remote/)
-[`mcp-client-console`](https://pypi.org/project/mcp-client-console/)
-
-
-**Stacks accessible on [GitHub](https://github.com/)** 
-<sub>*...designed for IaC deployment via `terraform`*</sub>
-
-[`mcp-sandbox-setup`](https://github.com/geomux/mcp-sandbox-setup)
-[`mcp-host-configuration`](https://github.com/geomux/mcp-host-configuration)
-[`mcp-host-provision`](https://github.com/geomux/mcp-host-provision)
-
-[`terraform-backend`](https://github.com/geomux/terraform-backend)
-
-
-<sub>*...how it all fits together:*</sub>
+**The agentic AI tooling cloud deployed system**
+<sub>*...a local CLI client, a remote MCP server, and the IaC that deploys it*</sub>
 
 ```mermaid
 flowchart TB
@@ -64,3 +51,20 @@ flowchart TB
     style IAC fill:#E0E0E0,stroke:#BDBDBD,stroke-width:6px,color:#424242
 
 ```
+
+**Packages live on [PyPI](https://pypi.org/user/geomux/)** 
+<sub>*...install with `pipx` and launch as apps straight from CLI!*</sub>
+
+[`mcp-server-remote`](https://pypi.org/project/mcp-server-remote/)
+[`mcp-client-console`](https://pypi.org/project/mcp-client-console/)
+
+
+**Stacks accessible on [GitHub](https://github.com/geomux)** 
+<sub>*...designed for IaC deployment via `terraform` `ansible` `docker`*</sub>
+
+[`mcp-sandbox-setup`](https://github.com/geomux/mcp-sandbox-setup)
+[`mcp-host-configure`](https://github.com/geomux/mcp-host-configure)
+[`mcp-host-provision`](https://github.com/geomux/mcp-host-provision)
+
+[`terraform-backend`](https://github.com/geomux/terraform-backend)
+
