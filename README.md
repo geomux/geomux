@@ -1,7 +1,6 @@
 ![geomux banner](images/geomux_banner.jpg)
 
-## *Geospatial Data Engineer*
-<sub>*Building and deploying AI-integrated systems on AWS*</sub>
+## *Building and deploying AI-integrated systems on AWS*
 
 ### **<sub>AWS • MCP • LLM agentic workflows • Python • Linux</sub>**
 <sub>*Deploying with - Terraform • Ansible • Docker*</sub>
