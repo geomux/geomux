@@ -63,8 +63,9 @@ flowchart TB
 <sub>*...designed for IaC deployment via `terraform`•`ansible`•`docker`*</sub>
 
 [`mcp-sandbox-setup`](https://github.com/geomux/mcp-sandbox-setup)
+[`mcp-sandbox-pentest`](https://github.com/geomux/mcp-sandbox-pentest)
 [`mcp-host-configure`](https://github.com/geomux/mcp-host-configure)
 [`mcp-host-provision`](https://github.com/geomux/mcp-host-provision)
 
-[`terraform-backend`](https://github.com/geomux/terraform-backend)
+[`tf-state-backend`](https://github.com/geomux/tf-state-backend)
 
