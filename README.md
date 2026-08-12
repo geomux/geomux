@@ -14,31 +14,31 @@ Currently building MCP server/client systems and IaC stacks to deploy them.
 
 ```mermaid
 flowchart TB
-    subgraph IAC["<b>IaC</b>"]
+    subgraph IAC["`**IaC**`"]
         direction LR
-        P[["mcp-host-provision
-        <br/><i>terraform</i>"]]:::iac
-        CF[["mcp-host-configure
-        <br/><i>ansible</i>"]]:::iac
-        SB[["mcp-sandbox-setup
-        <br/><i>docker</i>"]]:::iac
+        P[["`mcp-host-provision
+*terraform*`"]]:::iac
+        CF[["`mcp-host-configure
+*ansible*`"]]:::iac
+        SB[["`mcp-sandbox-setup
+*docker*`"]]:::iac
     end
 
-    subgraph LHOST["<b>local host</b>"]
+    subgraph LHOST["`**local host**`"]
         direction LR
-        U([user]):::me --> C["mcp-client-console"]:::pkg
-        M(["<b>ollama</b>
-        <br/>local model"]):::model <-->|provider = local| C
+        U(["`user`"]):::me --> C["`mcp-client-console`"]:::pkg
+        M(["`**ollama**
+local model`"]):::model <-->|provider = local| C
     end
 
-    subgraph RHOST["<b>remote host</b>"]
+    subgraph RHOST["`**remote host**`"]
         direction LR
-        N["nginx"]:::plumb --> S["mcp-server-remote"]:::pkg --> T["tools
-        <br/>shell · files"]:::tools
+        N["`nginx`"]:::plumb --> S["`mcp-server-remote`"]:::pkg --> T["`tools
+shell · files`"]:::tools
     end
 
-    API(["<b>Cloud API
-    <br/>frontier model"]):::cloud
+    API(["`**Cloud API**
+frontier model`"]):::cloud
 
     IAC -.->|provisions & configures| RHOST
     C <-->|HTTPS| N
