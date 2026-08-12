@@ -2,13 +2,15 @@
 
 ## *Building and deploying AI-integrated systems on AWS*
 
-> <sub>Building in - AWS • MCP • LLM agentic workflows • Python • Linux</sub>
-> <sub>*Deploying with - Terraform • Ansible • Docker*</sub>
-> <sub>*GIS foundation - Python geoprocessing • ETL pipelines • system automation*</sub>
+> <sub><ins>*Building in</ins> - AWS • MCP • LLM agentic workflows • Python • Linux*</ins></sub>
+
+> <sub><ins>*Deploying with - Terraform • Ansible • Docker*</ins></sub>
+
+> <sub><ins>*GIS foundation - Python geoprocessing • ETL pipelines • system automation*</ins></sub>
 
 Currently building MCP server/client systems and IaC stacks to deploy them.
 
-<u>Agentic AI tooling, cloud-deployed<u>
+**<ins>Agentic AI tooling, cloud-deployed</ins>**
 
 ```mermaid
 flowchart TB
