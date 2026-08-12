@@ -16,23 +16,23 @@ Currently building MCP server/client systems and IaC stacks to deploy them.
 flowchart TB
     subgraph IAC["<b>IaC</b>"]
         direction LR
-        P[["mcp-host-provision<br/><i>terraform</i>"]]:::iac
-        CF[["mcp-host-configure<br/><i>ansible</i>"]]:::iac
-        SB[["mcp-sandbox-setup<br/><i>docker</i>"]]:::iac
+        P[["mcp-host-provision<br/><br/><i>terraform</i>"]]:::iac
+        CF[["mcp-host-configure<br/><br/><i>ansible</i>"]]:::iac
+        SB[["mcp-sandbox-setup<br/><br/><i>docker</i>"]]:::iac
     end
 
     subgraph LHOST["<b>local host</b>"]
         direction LR
         U([user]):::me --> C["mcp-client-console"]:::pkg
-        M(["<b>ollama</b><br/>local model"]):::model <-->|provider = local| C
+        M(["<b>ollama</b><br/><br/>local model"]):::model <-->|provider = local| C
     end
 
     subgraph RHOST["<b>remote host</b>"]
         direction LR
-        N["nginx"]:::plumb --> S["mcp-server-remote"]:::pkg --> T["tools<br/>shell · files"]:::tools
+        N["nginx"]:::plumb --> S["mcp-server-remote"]:::pkg --> T["tools<br/><br/>shell · files"]:::tools
     end
 
-    API(["<b>Cloud API</b><br/>frontier model"]):::cloud
+    API(["<b>Cloud API</b><br/><br/>frontier model"]):::cloud
 
     IAC -.->|provisions & configures| RHOST
     C <-->|HTTPS| N
