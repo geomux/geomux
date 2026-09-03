@@ -1,7 +1,7 @@
 ![geomux banner](images/geomux_banner.jpg)
 
 ## *Bringing Agentic Tool Calling to Production Environments*
-## *Building and Deploying AI-Integrated Systems on AWS*
+*Building and Deploying AI-Integrated Systems on AWS*
 
 > <sub><ins>*Building in</ins> - AWS • MCP • LLM agentic workflows • Python • Linux*</sub>
 
@@ -14,9 +14,9 @@ Currently building MCP server/client systems for agentic tool calling and IaC st
 **<ins>Agentic AI tooling, cloud-deployed</ins>**
 
 ```mermaid
-flowchart TB
+%%{init: {"flowchart": {"nodeSpacing": 22, "rankSpacing": 38, "padding": 6}}}%%
+flowchart LR
     subgraph IAC["`**IaC**`"]
-        direction LR
         P[["`mcp-host-provision
 *terraform*`"]]:::iac
         CF[["`mcp-host-configure
@@ -25,17 +25,17 @@ flowchart TB
 *docker*`"]]:::iac
         TFS[["`tf-state-backend
 *terraform*`"]]:::iac
+        SB ~~~ P
+        TFS ~~~ CF
     end
 
     subgraph LHOST["`**local host**`"]
-        direction LR
         U(["`user`"]):::me --> C["`mcp-client-console`"]:::pkg
         M(["`**ollama**
 local model`"]):::model <-->|provider = local| C
     end
 
     subgraph RHOST["`**remote host**`"]
-        direction LR
         N["`nginx`"]:::plumb --> S["`mcp-server-remote`"]:::pkg --> T["`tools
 shell · files`"]:::tools
     end
@@ -43,9 +43,9 @@ shell · files`"]:::tools
     API(["`**Cloud API**
 frontier model`"]):::cloud
 
-    IAC -.->|provisions & configures| RHOST
     C <-->|HTTPS| N
     C <-.->|provider = api| API
+    P -.->|provisions & configures| N
 
     classDef me fill:none,stroke:#4A4F4A,stroke-width:2px,color:#4A4F4A
     classDef pkg fill:#FFFDE7,stroke:#5A6B7A,stroke-width:2px,color:#424242
@@ -57,7 +57,6 @@ frontier model`"]):::cloud
     style RHOST fill:#EDE7F6,stroke:#2E4034,stroke-width:2px,color:#263238
     style LHOST fill:#E8EAF6,stroke:#2E4034,stroke-width:2px,color:#263238
     style IAC fill:#E0E0E0,stroke:#BDBDBD,stroke-width:6px,color:#424242
-
 ```
 
 **Packages live on [PyPI](https://pypi.org/user/geomux/)** 
