@@ -1,6 +1,7 @@
 ![geomux banner](images/geomux_banner.jpg)
 
-## *Building and deploying AI-integrated systems on AWS*
+## *Bringing Agentic Tool Calling to Production Environments*
+## *Building and Deploying AI-Integrated Systems on AWS*
 
 > <sub><ins>*Building in</ins> - AWS • MCP • LLM agentic workflows • Python • Linux*</sub>
 
@@ -8,7 +9,7 @@
 
 > <sub><ins>*GIS foundation</ins> - Python geoprocessing • ETL pipelines • system automation*</sub>
 
-Currently building MCP server/client systems and IaC stacks to deploy them.
+Currently building MCP server/client systems for agentic tool calling and IaC stacks to deploy them.
 
 **<ins>Agentic AI tooling, cloud-deployed</ins>**
 
