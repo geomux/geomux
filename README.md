@@ -11,8 +11,10 @@
 
 Currently building MCP server/client systems for agentic tool calling and IaC stacks to deploy them.
 
+
 **<ins>Agentic AI tooling, cloud-deployed</ins>**
 
+```mermaid
 %%{init: {"flowchart": {"defaultRenderer": "elk", "nodeSpacing": 22, "rankSpacing": 38, "padding": 6}}}%%
 flowchart LR
     subgraph IAC["`**IaC**`"]
@@ -56,6 +58,7 @@ frontier model`"]):::cloud
     style RHOST fill:#EDE7F6,stroke:#2E4034,stroke-width:2px,color:#263238
     style LHOST fill:#E8EAF6,stroke:#2E4034,stroke-width:2px,color:#263238
     style IAC fill:#E0E0E0,stroke:#BDBDBD,stroke-width:6px,color:#424242
+```
 
 **Packages live on [PyPI](https://pypi.org/user/geomux/)** 
 <sub>*...install with `pipx` and launch as apps straight from CLI!*</sub>
