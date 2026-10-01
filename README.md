@@ -13,8 +13,7 @@ Currently building MCP server/client systems for agentic tool calling and IaC st
 
 **<ins>Agentic AI tooling, cloud-deployed</ins>**
 
-```mermaid
-%%{init: {"flowchart": {"nodeSpacing": 22, "rankSpacing": 38, "padding": 6}}}%%
+%%{init: {"flowchart": {"defaultRenderer": "elk", "nodeSpacing": 22, "rankSpacing": 38, "padding": 6}}}%%
 flowchart LR
     subgraph IAC["`**IaC**`"]
         P[["`mcp-host-provision
@@ -45,7 +44,7 @@ frontier model`"]):::cloud
 
     C <-->|HTTPS| N
     C <-.->|provider = api| API
-    P -.->|provisions & configures| N
+    P -.->|provisions & configures| RHOST
 
     classDef me fill:none,stroke:#4A4F4A,stroke-width:2px,color:#4A4F4A
     classDef pkg fill:#FFFDE7,stroke:#5A6B7A,stroke-width:2px,color:#424242
@@ -57,7 +56,6 @@ frontier model`"]):::cloud
     style RHOST fill:#EDE7F6,stroke:#2E4034,stroke-width:2px,color:#263238
     style LHOST fill:#E8EAF6,stroke:#2E4034,stroke-width:2px,color:#263238
     style IAC fill:#E0E0E0,stroke:#BDBDBD,stroke-width:6px,color:#424242
-```
 
 **Packages live on [PyPI](https://pypi.org/user/geomux/)** 
 <sub>*...install with `pipx` and launch as apps straight from CLI!*</sub>
